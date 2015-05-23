@@ -9,6 +9,8 @@ MorphMe(sourceElement,targetElement,elementShape,morphEffect);
 
 Example:
 
+<bold>
 new MorphMe(document.getElementById('source'),document.getElementById('target'),'rectangle','simple');
+</bold>
 
 More Shapes and effects coming soon!!!
