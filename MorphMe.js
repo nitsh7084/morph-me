@@ -1,10 +1,21 @@
 
 
 function MorphMe(source,target,shape,effect){
-this.source = document.querySelector(source);
-this.target = document.querySelector(target);
-this.shape = shape;
-this.effect = effect;
+this.source = source;
+this.target = target;
+this.shape = shape;      
+this.effect = effect;   
+
+if(typeof(shape) == 'undefined'){
+    
+this.shape = 'rect';    
+}
+
+if(typeof(effect) == 'undefined'){
+    
+this.effect = 'simple';    
+}
+
 this.targetCloseContainer = this.target.querySelector('.morph_close_container');
 this.init();
 }
@@ -45,6 +56,11 @@ this.target.classList.add('show');
 setTimeout(function(){
     
 self.scaleMorphContainer();   
+
+setTimeout(function(){
+self.targetCloseContainer.classList.add('show');
+},800);
+
 },600);
 }
 
@@ -70,6 +86,7 @@ self.closeMorphContainer();
 
 MorphMe.prototype.closeMorphContainer = function(){
 
+this.targetCloseContainer.classList.remove('show');
 setTimeout(function(){    
 this.target.classList.remove('show');    
 },200);

@@ -16,6 +16,17 @@ src:url('fontello_morph.ttf');
 font-family:'fontello_morph';
 }
 
+@mixin property1($prop,$val){
+#{$prop}:#{$val};
+-webkit-#{$prop}:#{$val};
+-moz-#{$prop}:#{$val};
+-ms-#{$prop}:#{$val}; 
+-o-#{$prop}:#{$val};
+}
+
+body{
+@include property1('perspective','800px');
+}
 .container{
 height:100%;
 width:100%;
@@ -44,12 +55,7 @@ left:0px;
 z-index:10001;
 opacity:0;
 pointer-events:none;
-
-transition:all .25s ease 0s;
--webkit-transition:all .25s ease 0s;
--moz-transition:all .25s ease 0s;
--ms-transition:all .25s ease 0s;
--o-transition:all .25s ease 0s;
+@include property1(transition,'all .25s ease 0s');
 }
 .morph_me_container.show{
 opacity:1;
@@ -64,6 +70,10 @@ width:62px;
 border-radius:50%;
 background:#fff;
 cursor:pointer;
+opacity:0;
+pointer-events:none;
+
+@include property1(transform,'translateY(30px)');
 }
 .morph_close_container:before{
 position:absolute;
@@ -73,4 +83,9 @@ font-family:'fontello_morph';
 font-size:21px;
 content:'\e80d';
 color:#000;
+}
+.morph_close_container.show{
+opacity:1;
+pointer-events:auto;
+@include property1(transform,'translateY(0px)');
 }
