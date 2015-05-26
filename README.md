@@ -9,4 +9,4 @@ MorphMe(sourceElement,targetElement,elementShape,morphEffect);
 
 Example:
 
-new MorphMe();
+new MorphMe(document.getElementById('source'),document.getElementById('target'),'rectangle','simple');
