@@ -1,0 +1,76 @@
+*{
+margin:0px;
+padding:0px;
+}
+html,body{
+height:100%;
+width:100%;
+}
+
+@font-face{
+src:url('ProximaNova-Light.ttf');
+font-family:'ProximaNovaLight';
+}
+@font-face{
+src:url('fontello_morph.ttf');
+font-family:'fontello_morph';
+}
+
+.container{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+.morph_me_button_container{
+padding:260px 0px;
+width:100%;
+text-align:center;
+}
+.morph_me_button{
+background:#2ecc71;
+padding:15px 62px;
+color:#fff;
+font-family:'ProximaNovaLight';
+font-size:18px;
+border:none;
+border-radius:2px;
+cursor:pointer;
+outline:none;
+}
+.morph_me_container{
+position:absolute;
+top:0px;
+left:0px;
+z-index:10001;
+opacity:0;
+pointer-events:none;
+
+transition:all .25s ease 0s;
+-webkit-transition:all .25s ease 0s;
+-moz-transition:all .25s ease 0s;
+-ms-transition:all .25s ease 0s;
+-o-transition:all .25s ease 0s;
+}
+.morph_me_container.show{
+opacity:1;
+pointer-events:auto;
+}
+.morph_close_container{
+position:absolute;
+top:8%;
+right:4%;
+height:62px;
+width:62px;
+border-radius:50%;
+background:#fff;
+cursor:pointer;
+}
+.morph_close_container:before{
+position:absolute;
+top:22px;
+left:21px;
+font-family:'fontello_morph';
+font-size:21px;
+content:'\e80d';
+color:#000;
+}
