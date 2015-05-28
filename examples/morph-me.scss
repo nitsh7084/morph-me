@@ -33,7 +33,7 @@ width:100%;
 overflow:hidden;
 }
 .morph_me_button_container{
-padding:260px 0px;
+padding:130px 0px;
 width:100%;
 text-align:center;
 }
@@ -88,4 +88,13 @@ color:#000;
 opacity:1;
 pointer-events:auto;
 @include property1(transform,'translateY(0px)');
+}
+.morph_ball_container{
+padding-top:80px;
+}
+.morph_circle{
+border-radius:50%;
+height:64px;
+width:64px;
+background:#2ecc71;
 }
