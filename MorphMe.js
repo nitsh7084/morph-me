@@ -50,7 +50,7 @@ this.target.style.backgroundColor = this.sourceBackgroundColor;
 this.addMorphControls();
 
 setTimeout(function(){
-this.target.classList.add('show');
+self.target.classList.add('show');
 },200);
 
 setTimeout(function(){
@@ -86,9 +86,16 @@ self.closeMorphContainer();
 
 MorphMe.prototype.closeMorphContainer = function(){
 
+var self = this;
+
 this.targetCloseContainer.classList.remove('show');
+this.target.style.top = this.sourceOffset.top+'px';    
+this.target.style.left = this.sourceOffset.left+'px';
+this.target.style.height = this.sourceOffset.height+'px';
+this.target.style.width = this.sourceOffset.width+'px';
+
 setTimeout(function(){    
-this.target.classList.remove('show');    
-},200);
+self.target.classList.remove('show');    
+},800);
 
 }

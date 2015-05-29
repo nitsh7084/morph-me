@@ -12,8 +12,8 @@ src:url('ProximaNova-Light.ttf');
 font-family:'ProximaNovaLight';
 }
 @font-face{
-src:url('fontello_morph.ttf');
-font-family:'fontello_morph';
+src:url('fontello.ttf');
+font-family:'fontello';
 }
 
 @mixin property1($prop,$val){
@@ -30,7 +30,6 @@ body{
 .container{
 height:100%;
 width:100%;
-overflow:hidden;
 }
 .morph_me_button_container{
 padding:130px 0px;
@@ -55,11 +54,16 @@ left:0px;
 z-index:10001;
 opacity:0;
 pointer-events:none;
-@include property1(transition,'all .25s ease 0s');
+@include property1(transition,'top .2s ease 0s, left .2s ease 0s, height .2s ease 0s, width .2s ease 0s, border-radius .4s ease 1s');
+}
+.morph_circle{
+border-radius:50%;
 }
 .morph_me_container.show{
 opacity:1;
 pointer-events:auto;
+border-radius:0px;
+@include property1(transition,'all .3s ease 0s');
 }
 .morph_close_container{
 position:absolute;
@@ -74,12 +78,13 @@ opacity:0;
 pointer-events:none;
 
 @include property1(transform,'translateY(30px)');
+@include property1(transition,'all .3s ease 0s');
 }
 .morph_close_container:before{
 position:absolute;
 top:22px;
 left:21px;
-font-family:'fontello_morph';
+font-family:'fontello';
 font-size:21px;
 content:'\e80d';
 color:#000;
@@ -90,11 +95,77 @@ pointer-events:auto;
 @include property1(transform,'translateY(0px)');
 }
 .morph_ball_container{
-padding-top:80px;
+text-align:center;
 }
-.morph_circle{
-border-radius:50%;
+.morph_ball{
 height:64px;
 width:64px;
+border-radius:50%;
 background:#2ecc71;
+display:inline-block;
+cursor:pointer;
+position:relative;
+}
+.morph_ball:before{
+position:absolute;
+top:23px;
+left:24px;
+font-family:'fontello';
+font-size:20px;
+color:#fff;
+content:'\e816';
+}
+.morph_title_container{
+padding:53px 0px;
+font-family:'ProximaNovaLight';
+font-size:52px;
+text-align:center;
+}
+.morph_content_container{
+padding:12px 5%;
+width:90%;
+text-align:center;
+}
+.morph_single_content{
+margin-top:48px;
+}
+.morph_single_content:nth-child(1){ 
+margin-left:0px;
+}
+.content_top, .content_bottom{
+width:100%;
+text-align:center;
+}
+.content_top{
+}
+.content_bottom{
+padding:16px 0px;
+width:100%;
+text-align:center;
+font-family:'ProximaNovaLight';
+font-size:18px;
+}
+.hexagon{
+width:100%;
+cursor:pointer;
+text-align:center;
+margin-left:45%;
+background:#2ecc71;
+}
+.hexagon_top{
+height:0px;
+width:0px;
+border:62px solid transparent;
+border-bottom:42px solid #2ecc71;
+}
+.hexagon_middle{
+height:62px;
+width:124px;
+background:#2ecc71;
+}
+.hexagon_bottom{
+height:0px;
+width:0px;
+border:62px solid transparent;
+border-top:42px solid #2ecc71;
 }

@@ -9,12 +9,30 @@
 
 <div class="container">
 
-<div class="morph_me_button_container">
+<div class="morph_title_container">
+MORPH ME
+</div>
+
+<div class="morph_content_container">
+
+<div class="morph_single_content">
+<div class="content_top">
 <button class="morph_me_button" id="source">MORPH ME</button>
 </div>
-
-
+<div class="content_bottom">
+RECTANGLE
 </div>
+</div>
+
+<div class="morph_single_content">
+<div class="content_top">
+<div class="morph_ball" id="source_ball"></div>
+</div>
+<div class="content_bottom">
+CIRCLE
+</div>
+</div>
+
 
 
 <div class="morph_me_container" id="target">
@@ -25,13 +43,22 @@
 </div>
 
 
+<div class="morph_me_container morph_circle" id="target_ball">
+
+<div class="morph_close_container">
+
+</div>
+</div>
+
+
+
 
 <script src="../MorphMe.js"></script>
 <script type="text/javascript">
 
 
 var morph = new MorphMe(document.querySelector('#source'),document.querySelector('#target'));
-
+var morph1 = new MorphMe(document.querySelector('#source_ball'),document.querySelector('#target_ball'));
 
 </script>
 
