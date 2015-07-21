@@ -1,5 +1,9 @@
 
 
+'use strict';
+
+var MorphMe = (function(window,undefined){
+
 function MorphMe(source,target,shape,effect){
 this.source = source;
 this.target = target;
@@ -99,3 +103,9 @@ self.target.classList.remove('show');
 },800);
 
 }
+
+
+return MorphMe;
+
+
+})(window);
