@@ -1,5 +1,5 @@
 
-
+//use strict mode
 'use strict';
 
 var MorphMe = (function(window,undefined){
