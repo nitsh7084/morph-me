@@ -10,7 +10,7 @@ html, body {
   src: url("ProximaNova-Bold.ttf");
   font-family: 'ProximaNovaBold'; }
 @font-face {
-  src: url("ProximaNova-Regular.ttf");
+  src: url("ProximaNova-Reg.ttf");
   font-family: 'ProximaNovaRegular'; }
 @font-face {
   src: url("ProximaNova-Light.ttf");
@@ -198,7 +198,6 @@ body {
   font-size: 21px;
   line-height: 39px;
   width: 70%;
-  text-align: center;
   color: #fff; }
 
 /*# sourceMappingURL=morph-me.css.map */
