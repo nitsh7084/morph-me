@@ -196,7 +196,8 @@ body {
   padding: 62px 15%;
   font-family: 'ProximaNovaLight';
   font-size: 21px;
-  line-height: 39px;
+  line-height: 42px;
+  text-align: left;
   width: 70%;
   color: #fff; }
 
