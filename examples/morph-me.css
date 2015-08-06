@@ -7,6 +7,12 @@ html, body {
   width: 100%; }
 
 @font-face {
+  src: url("ProximaNova-Bold.ttf");
+  font-family: 'ProximaNovaBold'; }
+@font-face {
+  src: url("ProximaNova-Regular.ttf");
+  font-family: 'ProximaNovaRegular'; }
+@font-face {
   src: url("ProximaNova-Light.ttf");
   font-family: 'ProximaNovaLight'; }
 @font-face {
@@ -184,13 +190,15 @@ body {
   color: #fff;
   width: 100%;
   text-align: center;
-  padding-top: 14%; }
+  padding-top: 11%; }
 
 .morph_content {
-  padding: 42px 0px;
+  padding: 62px 15%;
   font-family: 'ProximaNovaLight';
   font-size: 21px;
+  line-height: 39px;
   width: 70%;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
 
 /*# sourceMappingURL=morph-me.css.map */
