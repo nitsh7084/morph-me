@@ -178,4 +178,19 @@ body {
   border: 62px solid transparent;
   border-top: 42px solid #2ecc71; }
 
+.morph_title {
+  font-family: 'ProximaNovaBold';
+  font-size: 42px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 14%; }
+
+.morph_content {
+  padding: 42px 0px;
+  font-family: 'ProximaNovaLight';
+  font-size: 21px;
+  width: 70%;
+  text-align: center; }
+
 /*# sourceMappingURL=morph-me.css.map */
