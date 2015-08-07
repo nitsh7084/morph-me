@@ -62,7 +62,7 @@ left:0px;
 z-index:10001;
 opacity:0;
 pointer-events:none;
-overflow:scroll;
+overflow-y:scroll;
 @include property1(transition,'top .2s ease 0s, left .2s ease 0s, height .2s ease 0s, width .2s ease 0s, border-radius .4s ease 1s');
 }
 .morph_circle{
@@ -182,9 +182,10 @@ border-top:42px solid #2ecc71;
 font-family:'ProximaNovaBold';
 font-size:42px;
 color:#fff;
-width:100%;
+width:70%;
 text-align:center;
 padding-top:11%;
+padding-left:15%;
 }
 .morph_content{
 padding:62px 15%;
@@ -194,4 +195,7 @@ line-height:48px;
 text-align:left;
 width:70%;
 color:#fff;
+}
+.morph_content p{
+margin-top:17px;
 }
