@@ -192,7 +192,18 @@ body {
   width: 70%;
   text-align: center;
   padding-top: 11%;
-  padding-left: 15%; }
+  padding-left: 15%;
+  opacity: 0;
+  transition: all .25s ease 0s;
+  -webkit-transition: all .25s ease 0s;
+  -moz-transition: all .25s ease 0s;
+  -ms-transition: all .25s ease 0s;
+  -o-transition: all .25s ease 0s;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px); }
 
 .morph_content {
   padding: 62px 15%;
@@ -201,9 +212,28 @@ body {
   line-height: 48px;
   text-align: left;
   width: 70%;
-  color: #fff; }
+  color: #fff;
+  opacity: 0;
+  transition: all .25s ease 0s;
+  -webkit-transition: all .25s ease 0s;
+  -moz-transition: all .25s ease 0s;
+  -ms-transition: all .25s ease 0s;
+  -o-transition: all .25s ease 0s;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px); }
 
 .morph_content p {
   margin-top: 17px; }
+
+.morph_title.show, .morph_content.show {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px); }
 
 /*# sourceMappingURL=morph-me.css.map */
