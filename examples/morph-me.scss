@@ -199,7 +199,7 @@ text-align:left;
 width:70%;
 color:#fff;
 opacity:0;
-@include property1(transition,'all .25s ease 0s');
+@include property1(transition,'all .25s ease .15s');
 @include property1(transform,'translateY(-30px)');
 }
 .morph_content p{

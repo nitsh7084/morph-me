@@ -214,11 +214,11 @@ body {
   width: 70%;
   color: #fff;
   opacity: 0;
-  transition: all .25s ease 0s;
-  -webkit-transition: all .25s ease 0s;
-  -moz-transition: all .25s ease 0s;
-  -ms-transition: all .25s ease 0s;
-  -o-transition: all .25s ease 0s;
+  transition: all .25s ease .15s;
+  -webkit-transition: all .25s ease .15s;
+  -moz-transition: all .25s ease .15s;
+  -ms-transition: all .25s ease .15s;
+  -o-transition: all .25s ease .15s;
   transform: translateY(-30px);
   -webkit-transform: translateY(-30px);
   -moz-transform: translateY(-30px);
