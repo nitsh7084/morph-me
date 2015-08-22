@@ -34,6 +34,7 @@ font-family:'fontello';
 
 body{
 @include property1('perspective','800px');
+overflow:hidden;
 }
 .container{
 height:100%;
@@ -62,7 +63,7 @@ left:0px;
 z-index:10001;
 opacity:0;
 pointer-events:none;
-overflow-y:scroll;
+overflow-x:hidden;
 @include property1(transition,'top .2s ease 0s, left .2s ease 0s, height .2s ease 0s, width .2s ease 0s, border-radius .4s ease 1s');
 }
 .morph_circle{
@@ -125,7 +126,7 @@ color:#fff;
 content:'\e816';
 }
 .morph_title_container{
-padding:53px 0px 9px 0px;
+padding:53px 0px 14px 0px;
 font-family:'ProximaNovaLight';
 font-size:52px;
 text-align:center;
@@ -187,8 +188,8 @@ text-align:center;
 padding-top:11%;
 padding-left:15%;
 opacity:0;
-@include property1(transition,'all .25s ease 0s');
-@include property1(transform,'translateY(-30px)');
+@include property1(transition,'all .35s ease 0s');
+@include property1(transform,'translateY(-40px)');
 }
 .morph_content{
 padding:62px 15%;
@@ -199,8 +200,8 @@ text-align:left;
 width:70%;
 color:#fff;
 opacity:0;
-@include property1(transition,'all .25s ease .15s');
-@include property1(transform,'translateY(-30px)');
+@include property1(transition,'all .35s ease .2s');
+@include property1(transform,'translateY(-40px)');
 }
 .morph_content p{
 margin-top:17px;
@@ -210,8 +211,8 @@ opacity:1;
 @include property1(transform,'translateY(0px)');
 } 
 .morph_desc_container{
-font-family:'ProximaNovaRegular';
-font-size:17px;
+font-family:'ProximaNovaLight';
+font-size:19px;
 width:100%;
 text-align:center;
 padding-bottom:44px;

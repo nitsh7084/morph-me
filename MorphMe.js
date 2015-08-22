@@ -9,6 +9,8 @@ this.source = source;
 this.target = target;
 this.shape = shape;      
 this.effect = effect;   
+this.morph_title = this.target.querySelector('.morph_title');
+this.morph_content = this.target.querySelector('.morph_content');
 
 if(typeof(shape) == 'undefined'){
     
@@ -62,6 +64,8 @@ setTimeout(function(){
 self.scaleMorphContainer();   
 
 setTimeout(function(){
+self.morph_title.classList.add('show');
+self.morph_content.classList.add('show');
 self.targetCloseContainer.classList.add('show');
 },800);
 
@@ -97,6 +101,9 @@ this.target.style.top = this.sourceOffset.top+'px';
 this.target.style.left = this.sourceOffset.left+'px';
 this.target.style.height = this.sourceOffset.height+'px';
 this.target.style.width = this.sourceOffset.width+'px';
+
+self.morph_title.classList.remove('show');
+self.morph_content.classList.remove('show');
 
 setTimeout(function(){    
 self.target.classList.remove('show');    
