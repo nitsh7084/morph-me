@@ -134,7 +134,7 @@ body {
   content: '\e816'; }
 
 .morph_title_container {
-  padding: 53px 0px;
+  padding: 53px 0px 9px 0px;
   font-family: 'ProximaNovaLight';
   font-size: 52px;
   text-align: center; }
@@ -235,5 +235,12 @@ body {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px); }
+
+.morph_desc_container {
+  font-family: 'ProximaNovaRegular';
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 44px; }
 
 /*# sourceMappingURL=morph-me.css.map */

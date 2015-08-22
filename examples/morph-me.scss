@@ -125,7 +125,7 @@ color:#fff;
 content:'\e816';
 }
 .morph_title_container{
-padding:53px 0px;
+padding:53px 0px 9px 0px;
 font-family:'ProximaNovaLight';
 font-size:52px;
 text-align:center;
@@ -209,3 +209,10 @@ margin-top:17px;
 opacity:1;
 @include property1(transform,'translateY(0px)');
 } 
+.morph_desc_container{
+font-family:'ProximaNovaRegular';
+font-size:17px;
+width:100%;
+text-align:center;
+padding-bottom:44px;
+}
