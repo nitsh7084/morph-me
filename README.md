@@ -11,8 +11,8 @@ MorphMe(sourceElement,targetElement,elementShape,morphEffect);
 
 Example:
 
-<bold>
+```javascript
 new MorphMe(document.getElementById('source'),document.getElementById('target'),'rectangle','simple');
-</bold>
+```
 
 More Shapes and effects coming soon!!!
