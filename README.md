@@ -1,4 +1,4 @@
-# morph-me
+# MorphMe
 A shape morphing library
 
 [DEMO](http://www.amituslab.com/github/MorphMe/examples/morph-me.html) 
