@@ -11,7 +11,7 @@ this.shape = shape;
 this.effect = effect;   
 this.morph_title = this.target.querySelector('.morph_title');
 this.morph_content = this.target.querySelector('.morph_content');
-this.effects = ['simple','bounce','cover'];
+this.effects = ['linear','bounce','cover'];
 
 if(typeof(shape) == 'undefined'){
     
@@ -20,7 +20,7 @@ this.shape = 'rect';
 
 if(typeof(effect) == 'undefined'){
     
-this.effect = 'simple';    
+this.effect = 'linear';    
 }
 
 this.targetCloseContainer = this.target.querySelector('.morph_close_container');
