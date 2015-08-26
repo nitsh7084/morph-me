@@ -111,6 +111,11 @@ self.target.classList.remove('show');
 
 }
 
+MorphMe.prototype.changeEffect = function(){
+ 
+ 
+}
+
 
 return MorphMe;
 
